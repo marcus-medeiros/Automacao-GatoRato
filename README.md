@@ -66,5 +66,28 @@ Este autômato será responsável por garantir que o Gato e o Rato se movam alte
 
 <p align="center">
 <img src= "img/GATO_RATO.png" height="200" align="center">
+
+### 🛑 Limitador de Colisão
+Este autômato têm a função de garantir que o Gato e o Rato nunca ocupem a mesma sala simultaneamente, utilizando-se da lógica de proibição de eventos (BLOCKED:).
+
+#### Estados
+- **0** (Inicial): Estado inicial.
+
+#### Eventos Bloqueados (BLOCKED)
+
+- **G_come_R_S0**: O gato chega na Sala 1 e Rato já está na Sala 1)
+- **G_come_R_S1**: O gato chega na Sala 2 e Rato já está na Sala 2)
+- **G_come_R_S2**: O gato chega na Sala 3 e Rato já está na Sala 3)
+- **G_come_R_S3**: O gato chega na Sala 4 e Rato já está na Sala 4)
+- **G_come_R_S4**: O gato chega na Sala 5 e Rato já está na Sala 5)
+
+Para modelar esses eventos bloqueados, foi necessário adicionar auto-loops nos autômatos do Gato e do Rato que representem a "chegada" em uma sala onde o outro já se encontra.
+
+Com isso, temos o autômato *Limite* que realiza essa restrição:
+
+<p align="center">
+<img src= "img/LIMITES.png" height="150" align="center">
+</p>
+<p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
 </p>
 <p align="center"> Figura 03: Autômato do Controlador de Turno</p>
