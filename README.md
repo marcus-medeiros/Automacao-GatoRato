@@ -14,7 +14,7 @@ O gato é um dos agentes do sistema, capaz de se mover para salas adjacentes. Se
 - **SG0**, **SG1**, **SG2**, **SG3**, **SG4**: Representa os estados que o gato está posicionado, em que SG0 está relacionado à Sala1, SG1 à Sala1, e assim por diante.
 
 #### Eventos
-- **move_gato_direita**, **move_gato_esquerda**: Eventos controláveis que representam o movimento do gato.
+- **GD**, **GE**: Eventos controláveis que representam o movimento do gato.
 
 <p align="center">
 <img src= "img/GATO.png" height="250" align="center">
@@ -28,7 +28,7 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 - **SR0**, **SR1**, **SR2**, **SR3**, **SR4**: Representa os estados que o gato está posicionado, em que SR0 está relacionado à Sala1, SR1 à Sala1, e assim por diante.
 
 #### Eventos
-- **move_rato_direita**, **move_rato_esquerda**: Eventos não controláveis que representam o movimento do rato.
+- **RD**, **RE**: Eventos não controláveis que representam o movimento do rato.
 
 <p align="center">
 <img src= "img/RATO.png" height="250" align="center">
