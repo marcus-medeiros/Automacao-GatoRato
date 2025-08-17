@@ -107,7 +107,7 @@ Realizando-se a composição paralela, temos o autômato resultante da síntese 
 Com a composição desses autômatos, temos que a autômoto resultante da síntese poderá localizar as posições dos agentes (gato e o rato), e possibilitando os passos alternadamente. Apenas movimentos seguros serão permitidos, de modo em que ambos os agentes não localizem-se em uma mesma sala. 
 
 <p align="center">
-<img src= "img/Resultante.png" height="150" align="center">
+<img src= "img/Resultante.png" height="350" align="center">
 </p>
 <p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
 </p>
