@@ -16,7 +16,7 @@ O gato é um dos agentes do sistema, capaz de se mover para salas adjacentes. Se
 #### Eventos
 - **GD**, **GE**: Eventos controláveis que representam o movimento do gato.
 
-### Eventos para implementações de restrições
+#### Eventos para implementações de restrições
 - **G_come_R_S0**, **G_come_R_S1**, **G_come_R_S2**, **G_come_R_S3**, **G_come_R_S4**: Eventos não controláveis que serão utilizados para detecção de colisões 
 
 <p align="center">
@@ -33,7 +33,7 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 #### Eventos 
 - **RD**, **RE**: Eventos não controláveis que representam o movimento do rato.
 
-### Eventos para implementações de restrições
+#### Eventos para implementações de restrições
 - **G_come_R_S0**, **G_come_R_S1**, **G_come_R_S2**, **G_come_R_S3**, **G_come_R_S4**: Eventos não controláveis que serão utilizados para detecção de colisões 
 
 <p align="center">
