@@ -111,4 +111,3 @@ Com a composição desses autômatos, temos que a autômoto resultante da sínte
 </p>
 <p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
 </p>
-<p align="center"> Figura 03: Autômato do Controlador de Turno</p>
