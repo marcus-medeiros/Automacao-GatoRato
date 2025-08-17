@@ -56,6 +56,6 @@ Este autômato será responsável por garantir que o Gato e o Rato se movam alte
 - **RD**, **RE**: Ao ocorrer um movimento do Rato, o turno passa para o Gato.
 
 <p align="center">
-<img src= "img/Gato_Rato" height="200" align="center">
+<img src= "img/GATO_RATO.png" height="200" align="center">
 </p>
 <p align="center"> Figura 03: Autômato do Controlador de Turno</p>
