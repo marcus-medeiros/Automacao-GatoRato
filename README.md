@@ -16,6 +16,9 @@ O gato é um dos agentes do sistema, capaz de se mover para salas adjacentes. Se
 #### Eventos
 - **GD**, **GE**: Eventos controláveis que representam o movimento do gato.
 
+### Eventos para implementações de restrições
+- **G_come_R_S0**, - **G_come_R_S1**, - **G_come_R_S2**, - **G_come_R_S3**, - **G_come_R_S4**: Eventos não controláveis que serão utilizados para detecção de colisões 
+
 <p align="center">
 <img src= "img/GATO.png" height="250" align="center">
 </p>
@@ -27,10 +30,16 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 #### Estados
 - **SR0**, **SR1**, **SR2**, **SR3**, **SR4**: Representa os estados que o gato está posicionado, em que SR0 está relacionado à Sala1, SR1 à Sala1, e assim por diante.
 
-#### Eventos
+#### Eventos 
 - **RD**, **RE**: Eventos não controláveis que representam o movimento do rato.
+
+### Eventos para implementações de restrições
+- **G_come_R_S0**, - **G_come_R_S1**, - **G_come_R_S2**, - **G_come_R_S3**, - **G_come_R_S4**: Eventos não controláveis que serão utilizados para detecção de colisões 
 
 <p align="center">
 <img src= "img/RATO.png" height="250" align="center">
 </p>
 <p align="center"> Figura 02: Autômato do Rato</p>
+
+### ⚙️ Componentes do Sistema (Complemento)
+Além dos autômatos do Gato e do Rato, visando implementar o controle de "um passo por vez" e um autômato para limitações de colisões, adicionaremos mais dois autômatos: o *Gato_Rato* e o *Limites*.
