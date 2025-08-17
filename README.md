@@ -33,4 +33,4 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 <p align="center">
 <img src= "img/RATO.png" height="250" align="center">
 </p>
-<p align="center"> Figura 01: Autômato do Rato</p>
+<p align="center"> Figura 02: Autômato do Rato</p>
