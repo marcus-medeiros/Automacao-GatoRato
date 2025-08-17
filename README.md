@@ -17,7 +17,7 @@ O gato é um dos agentes do sistema, capaz de se mover para salas adjacentes. Se
 **move_gato_direita**, **move_gato_esquerda**: Eventos controláveis que representam o movimento do gato.
 
 <p align="center">
-<img src= "XXX" height="250" align="center">
+<img src= "img/GATO.png" height="250" align="center">
 </p>
 <p align="center"> Figura 01: Autômato do Gato</p>
 
