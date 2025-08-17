@@ -41,5 +41,21 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 </p>
 <p align="center"> Figura 02: Autômato do Rato</p>
 
-### ⚙️ Componentes do Sistema (Complemento)
+## ⚙️ Componentes do Sistema (Complemento)
 Além dos autômatos do Gato e do Rato, visando implementar o controle de "um passo por vez" e um autômato para limitações de colisões, adicionaremos mais dois autômatos: o *Gato_Rato* e o *Limites*.
+
+### 🕹️ Gato_Rato (Controle de passo)
+Este autômato será responsável por garantir que o Gato e o Rato se movam alternadamente. Ele atuará como um "semafáro", permitindo que apenas um dos agentes se mova por vez.
+
+#### Estados
+- **Gato** (Inicial): Indica que é a vez do Gato se mover.
+- **Rato**: Indica que é a vez do Rato se mover.
+
+#### Eventos
+- **GD**, **GE**: Ao ocorrer um movimento do Gato, o turno passa para o Rato.
+- **RD**, **RE**: Ao ocorrer um movimento do Rato, o turno passa para o Gato.
+
+<p align="center">
+<img src= "img/Gato_Rato" height="200" align="center">
+</p>
+<p align="center"> Figura 03: Autômato do Controlador de Turno</p>
