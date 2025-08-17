@@ -66,6 +66,7 @@ Este autômato será responsável por garantir que o Gato e o Rato se movam alte
 
 <p align="center">
 <img src= "img/GATO_RATO.png" height="200" align="center">
+<p align="center"> Figura 03: Autômato do Controlador de Turno</p>
 
 ### 🛑 Limitador de Colisão
 Este autômato têm a função de garantir que o Gato e o Rato nunca ocupem a mesma sala simultaneamente, utilizando-se da lógica de proibição de eventos (BLOCKED:).
@@ -90,7 +91,7 @@ Com isso, temos o autômato *Limite* que realiza essa restrição:
 </p>
 <p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
 </p>
-<p align="center"> Figura 03: Autômato do Controlador de Turno</p>
+
 
 ### 🧩 Autômato Resultante (Após a Síntese dos autômatos)
 
