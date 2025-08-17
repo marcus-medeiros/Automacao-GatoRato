@@ -1,3 +1,9 @@
+Projeto realizado por: 
+> Marcus Vinícius de Medeiros - 121110400
+> William Santos Moreira - 121110532
+> Ygor...
+
+
 # 🐈 Controle do fluxo de salas entre dois agentes (gato e o rato)
 Este projeto modela um sistema clássico de eventos discretos envolvendo um gato e um rato que se movem livremente em uma torre com 5 salas dispostas em um ciclo. 
 
