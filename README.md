@@ -91,3 +91,24 @@ Com isso, temos o autômato *Limite* que realiza essa restrição:
 <p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
 </p>
 <p align="center"> Figura 03: Autômato do Controlador de Turno</p>
+
+### 🧩 Autômato Resultante (Após a Síntese dos autômatos)
+
+Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, *Gato_Rato* (Controle de Passo) e *Limites* será um sistema que:
+
+- Permitirá que o Gato e o Rato se movam sequencialmente (um de cada vez), alternando os turnos.
+
+- Garantirá que em nenhum momento o Gato e o Rato ocupem a mesma sala (Medida de Segurança).
+
+- Será não-bloqueante (se houver uma sequência segura de movimentos, o sistema poderá progredir).
+
+- Será maximamente permissivo dentro das restrições de segurança e da alternância de turnos.
+
+Com a composição desses autômatos, temos que a autômoto resultante da síntese poderá localizar as posições dos agentes (gato e o rato), e possibilitando os passos alternadamente. Apenas movimentos seguros serão permitidos, de modo em que ambos os agentes não localizem-se em uma mesma sala. 
+
+<p align="center">
+<img src= "img/RESULTANTE.png" height="150" align="center">
+</p>
+<p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
+</p>
+<p align="center"> Figura 03: Autômato do Controlador de Turno</p>
