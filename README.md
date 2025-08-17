@@ -54,7 +54,7 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 Além dos autômatos do Gato e do Rato, visando implementar o controle de "um passo por vez" e um autômato para limitações de colisões, adicionaremos mais dois autômatos: o *Gato_Rato* e o *Limites*.
 
 ### 🕹️ Gato_Rato (Controle de passo)
-Este autômato será responsável por garantir que o Gato e o Rato se movam alternadamente. Ele atuará como um "semafáro", permitindo que apenas um dos agentes se mova por vez.
+Este autômato será responsável por garantir que o Gato e o Rato se movam alternadamente. Ele atuará como um "semafáro", permitindo que apenas um dos agentes se mova por vez, e que necessariamente após a movimentação de o próximo movimento deve ser do outro.
 
 #### Estados
 - **Gato** (Inicial): Indica que é a vez do Gato se mover.
