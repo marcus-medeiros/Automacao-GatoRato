@@ -1,9 +1,10 @@
+## Projeto da disciplina de Sistemas de Eventos Discretos 
 Projeto realizado por: 
 > Marcus Vinícius de Medeiros - 121110400
 
 > William Santos Moreira - 121110532
 
-> Ygor...
+> Ygor de Almeida Pereira - 121110166
 
 
 # 🐈 Controle do fluxo de salas entre dois agentes (gato e o rato)
