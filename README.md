@@ -112,3 +112,8 @@ Com a composição desses autômatos, temos que a autômoto resultante da sínte
 </p>
 <p align="center"> Figura 05: Autômato do Limitador de Colisão</p>
 </p>
+
+
+### 🧩 Considerações
+
+A restrição de um agente pode ser necessária para garantir o funcionamento correto do autômato síntese, assegurando que o sistema atenda às especificações de segurança e não-violação. No entanto, outras abordagens podem ser exploradas a fim de aumentar a flexibilidade e a liberdade de movimentação dos agentes. Uma alternativa consiste na adição de estados de bloqueio entre os eventos de transição de sala, representando portas que controlam o acesso. Essa estratégia permite que os agentes circulem de maneira mais livre, ao mesmo tempo em que o sistema mantém mecanismos de controle que evitam situações indesejadas.
