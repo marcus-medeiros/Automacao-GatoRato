@@ -110,5 +110,5 @@ Com a composição desses autômatos, temos que a autômoto resultante da sínte
 <p align="center">
 <img src= "img/IMG-20250817-WA0015.jpg" height="350" align="center">
 </p>
-<p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
+<p align="center"> Figura 05: Autômato do Limitador de Colisão</p>
 </p>
