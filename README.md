@@ -183,23 +183,18 @@ Inicialmente, após a geração da especificação por meio da composição entr
 
 Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, e das **Portas* e as *Especificações* será um sistema que:
 
-- Permitirá que o Gato e o Rato se movam sequencialmente (um de cada vez), alternando os turnos.
+- Permitirá que o Gato e o Rato se simuntaneamente, uma interpretação rigorosa do sistema.
 
-- Garantirá que em nenhum momento o Gato e o Rato ocupem a mesma sala (Medida de Segurança).
+- Garantirá que em nenhum momento o Gato e o Rato ocupem a mesma sala.
 
-- Será não-bloqueante (se houver uma sequência segura de movimentos, o sistema poderá progredir).
+- Será não-bloqueante, ou seja, não há um estado em que haja o bloqueio dos movimentos do gato e do gato por completo.
 
 - Será maximamente permissivo dentro das restrições de segurança e da alternância de turnos.
 
-Com a composição desses autômatos, temos que a autômoto resultante da síntese poderá localizar as posições dos agentes (gato e o rato), e possibilitando os passos alternadamente. Apenas movimentos seguros serão permitidos, de modo em que ambos os agentes não localizem-se em uma mesma sala. 
-
-<p align="center">
-<img src= "img/IMG-20250817-WA0015.jpg" height="350" align="center">
-</p>
-<p align="center"> Figura 05: Autômato do Limitador de Colisão</p>
-</p>
+Com a composição desses autômatos, o autômato resultante da síntese é capaz de identificar as posições dos agentes (Gato e Rato) e de permitir seus movimentos de forma aleatória e/ou simultânea. Apenas movimentos seguros são autorizados, garantindo que os dois agentes nunca ocupem a mesma sala simultaneamente.
 
 
 ### 🧩 Considerações
 
-A restrição de um agente pode ser necessária para garantir o funcionamento correto do autômato síntese, assegurando que o sistema atenda às especificações de segurança e não-violação. No entanto, outras abordagens podem ser exploradas a fim de aumentar a flexibilidade e a liberdade de movimentação dos agentes. Uma alternativa consiste na adição de estados de bloqueio entre os eventos de transição de sala, representando portas que controlam o acesso. Essa estratégia permite que os agentes circulem de maneira mais livre, ao mesmo tempo em que o sistema mantém mecanismos de controle que evitam situações indesejadas.
+A condição que garante a simultaneidade dos movimentos dos agentes impõe limitações às possibilidades de deslocamento, de modo que o Gato e o Rato não podem ocupar salas adjacentes ao mesmo tempo. Caso essa restrição não fosse necessária, seria possível permitir uma maior flexibilidade nos movimentos dos agentes entre as salas, ampliando as combinações de estados possíveis no sistema.
+
