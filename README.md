@@ -164,7 +164,6 @@ Foram elaboradas duas especificações para a modelagem do sistema. A primeira c
 
 Inicialmente, após a geração da especificação por meio da composição entre as plantas que representam os agentes do sistema, foram aplicadas as restrições necessárias. Em essência, essas restrições correspondem aos estados em que o Gato e o Rato ocupam simultaneamente a mesma sala, situação que deve ser evitada no modelo.
 
-
 #### Especificação: Autômato do Gato||Rato
 
 <p align="center">
@@ -172,11 +171,17 @@ Inicialmente, após a geração da especificação por meio da composição entr
 </p>
 <p align="center"> Figura 13: Especificação Gato||Rato</p>
 
-**Observação:** desenvolvimento e pode conter alterações futuras.Observa-se que o modelo apresenta estados com restrição, destacados em azul, enquanto os outros permanecem representados na cor verde.
+**Observação:** Observa-se que o modelo apresenta estados com restrição, destacados em azul, enquanto os outros permanecem representados na cor verde.
+
+### 🎌 Especificação: Autômato da Composição das Portas
+
+**Objetivo:** O objetivo é representar de forma completa as condições em que as portas devem permanecer abertas ou fechadas, considerando os possíveis movimentos do Gato e do Rato, de modo a garantir que cada transição dos agentes resulte na configuração correta de acesso entre as salas. Por se tratar de uma especificação, os eventos que violam essas condições devem ser bloqueados. Como o autômato das portas define que os movimentos de entrada em uma sala dependem do estado atual das portas, surgem restrições automáticas no sistema. Dessa forma, após a composição de todos os autômatos, obtém-se uma especificação completa que descreve todos os movimentos permitidos para os agentes, assegurando a operação correta e segura do sistema.
+
+
 
 ### 🧩 Autômato Resultante (Após a Síntese dos autômatos)
 
-Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, *Gato_Rato* (Controle de Passo) e *Limites* será um sistema que:
+Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, e das **Portas* e as *Especificações* será um sistema que:
 
 - Permitirá que o Gato e o Rato se movam sequencialmente (um de cada vez), alternando os turnos.
 
