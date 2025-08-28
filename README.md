@@ -13,6 +13,9 @@ Este projeto modela um sistema clássico de eventos discretos envolvendo um gato
 ## 🔎 Descrição Geral
 Este projeto modela um sistema clássico de eventos discretos envolvendo um gato e um rato que se movem livremente em uma torre com 5 salas dispostas em um ciclo. O objetivo é desenvolver um supervisor (um controlador automatizado) que restrinja os movimentos do gato para garantir a principal condição de segurança: o gato nunca deve ocupar a mesma sala que o rato. O sistema supervisionado deve ser não-bloqueante (nunca travar) e maximamente permissivo, concedendo a maior liberdade de movimento possível sem violar a regra de segurança.
 
+## ⛔ Problema Central
+Durante a montagem dos autômatos, observa-se a existência de uma restrição que não é imediatamente aparente, mas que se torna evidente quando se busca efetivamente controlar o sistema. Ao modelar as especificações, em especial os eventos bloqueantes, verifica-se que a ausência de controle sobre os movimentos dos ratos impõe uma dificuldade adicional à modelagem. Isso ocorre porque, embora o sistema seja observável, ele não é controlável. Além da incerteza quanto à direção escolhida pelo rato em seus deslocamentos, não há garantia nem controle sobre a efetiva realização da transição correspondente ao movimento.
+
 ## ⚙️ Componentes do Sistema
 O sistema é composto por dois agentes (o Gato e o Rato), cujos comportamentos são modelados como plantas, e uma especificação de segurança que define a regra de controle.
 
