@@ -167,9 +167,9 @@ Inicialmente, após a geração da especificação por meio da composição entr
 #### Especificação: Autômato do Gato||Rato
 
 <p align="center">
-<img src= "img/Especific_GATOeRato.png" height="300" align="center">
+<img src= "img/Especific_GATOeRATO.png" height="300" align="center">
 </p>
-<p align="center"> Figura 13: Especificação Gato||Rato</p>
+<p align="center"> Figura 13: Especificação GATO||RATO</p>
 
 **Observação:** Observa-se que o modelo apresenta estados com restrição, destacados em azul, enquanto os outros permanecem representados na cor verde.
 
