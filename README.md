@@ -7,7 +7,7 @@ Projeto realizado por:
 > Ygor de Almeida Pereira - 121110166
 
 
-# 🐈 Controle do fluxo de salas entre dois agentes (gato e o rato)
+# 🐈 Controle do fluxo de salas entre dois agentes (gato e o rato) com auxílio de portas
 Este projeto modela um sistema clássico de eventos discretos envolvendo um gato e um rato que se movem livremente em uma torre com 5 salas dispostas em um ciclo. 
 
 ## 🔎 Descrição Geral
