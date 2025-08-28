@@ -201,4 +201,15 @@ A condição que garante a simultaneidade dos movimentos dos agentes impõe limi
 
 ### 🎥 Link do vídeo: 
 
+### 🖊️ Documento: 
+doc/
+├─ Automato_GatoRato_ALTERNANDO.wmod (Modelagem com alternância - antiga)
+├─ GatoRato_Project.wmod (Modelagem do Projeto Completa - nova)
+└─ main
+
+img/
+|- Imagens...
+
+✉ README.md    [selected]
+
 
