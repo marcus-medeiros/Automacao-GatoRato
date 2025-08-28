@@ -37,7 +37,7 @@ O gato é um dos agentes do sistema, capaz de se mover para salas adjacentes. Se
 #### Planta: Autômato do Gato
 
 <p align="center">
-<img src= "img/Gato.png" height="150" align="center">
+<img src= "img/GATO.png" height="150" align="center">
 </p>
 <p align="center"> Figura 02: Autômato do Gato</p>
 
@@ -59,7 +59,7 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 #### Planta: Autômato do Rato
 
 <p align="center">
-<img src= "img/Rato.png" height="150" align="center">
+<img src= "img/RATO.png" height="150" align="center">
 </p>
 <p align="center"> Figura 04: Autômato do Gato</p>
 
