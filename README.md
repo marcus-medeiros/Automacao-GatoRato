@@ -155,32 +155,24 @@ Esses autômatos tem como objetivo representarem o funcionamento das portas entr
 <p align="center"> Figura 12: Autômato da Porta_34</p>
 
 
+## 🛑 Especificações
+Este autômato tem como função assegurar que o Gato e o Rato nunca ocupem a mesma sala simultaneamente. Para atender a esse objetivo, torna-se necessário o desenvolvimento de autômatos adicionais que imponham restrições sobre determinados movimentos (eventos), de modo que o sistema resultante opere conforme o comportamento esperado.
+
+Foram elaboradas duas especificações para a modelagem do sistema. A primeira corresponde ao resultado da composição paralela dos autômatos que representam o Gato e o Rato, enquanto a segunda refere-se à composição das portas entre as salas. A partir desses autômatos resultantes, foram então aplicadas as restrições necessárias para garantir o atendimento à especificação de segurança do sistema.
+
+### 🎌 Especificação: Gato e Rato
+
+Inicialmente, após a geração da especificação por meio da composição entre as plantas que representam os agentes do sistema, foram aplicadas as restrições necessárias. Em essência, essas restrições correspondem aos estados em que o Gato e o Rato ocupam simultaneamente a mesma sala, situação que deve ser evitada no modelo.
 
 
-### 🛑 Limitador de Colisão
-Este autômato têm a função de garantir que o Gato e o Rato nunca ocupem a mesma sala simultaneamente, utilizando-se da lógica de proibição de eventos (BLOCKED:).
-
-#### Estados
-- **0** (Inicial): Estado inicial.
-
-#### Eventos Bloqueados (BLOCKED)
-
-- **G_come_R_S0**: O gato chega na Sala 1 e Rato já está na Sala 1)
-- **G_come_R_S1**: O gato chega na Sala 2 e Rato já está na Sala 2)
-- **G_come_R_S2**: O gato chega na Sala 3 e Rato já está na Sala 3)
-- **G_come_R_S3**: O gato chega na Sala 4 e Rato já está na Sala 4)
-- **G_come_R_S4**: O gato chega na Sala 5 e Rato já está na Sala 5)
-
-Para modelar esses eventos bloqueados, foi necessário adicionar auto-loops nos autômatos do Gato e do Rato que representem a "chegada" em uma sala onde o outro já se encontra.
-
-Com isso, temos o autômato *Limite* que realiza essa restrição:
+#### Especificação: Autômato do Gato||Rato
 
 <p align="center">
-<img src= "img/LIMITES.png" height="150" align="center">
+<img src= "img/Especific_GATOeRato.png" height="300" align="center">
 </p>
-<p align="center"> Figura 04: Autômato do Limitador de Colisão</p>
-</p>
+<p align="center"> Figura 13: Especificação Gato||Rato</p>
 
+**Observação:** desenvolvimento e pode conter alterações futuras.Observa-se que o modelo apresenta estados com restrição, destacados em azul, enquanto os outros permanecem representados na cor verde.
 
 ### 🧩 Autômato Resultante (Após a Síntese dos autômatos)
 
