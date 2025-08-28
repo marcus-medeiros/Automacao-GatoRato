@@ -181,18 +181,18 @@ Inicialmente, após a geração da especificação por meio da composição entr
 
 ### 🧩 Autômato Resultante (Após a Síntese dos autômatos)
 
-Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, e das **Portas* e as *Especificações* será um sistema que:
+Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, e das **Portas* e as *Especificações*. 
+O sistema resultante apresenta as seguintes propriedades:
 
-- Permitirá que o Gato e o Rato se simuntaneamente, uma interpretação rigorosa do sistema.
+- Permite que o Gato e o Rato se movimentem de forma simultânea, garantindo uma interpretação rigorosa do comportamento do sistema;
 
-- Garantirá que em nenhum momento o Gato e o Rato ocupem a mesma sala.
+- Assegura que, em nenhum momento, os dois agentes ocupem a mesma sala;
 
-- Será não-bloqueante, ou seja, não há um estado em que haja o bloqueio dos movimentos do gato e do gato por completo.
+- É não bloqueante, ou seja, não existem estados em que todos os movimentos possíveis dos agentes sejam impedidos;
 
-- Será maximamente permissivo dentro das restrições de segurança e da alternância de turnos.
+- É maximamente permissivo dentro das restrições de segurança impostas.
 
-Com a composição desses autômatos, o autômato resultante da síntese é capaz de identificar as posições dos agentes (Gato e Rato) e de permitir seus movimentos de forma aleatória e/ou simultânea. Apenas movimentos seguros são autorizados, garantindo que os dois agentes nunca ocupem a mesma sala simultaneamente.
-
+Com essa composição, o autômato resultante da síntese é capaz de localizar as posições de ambos os agentes e permitir seus deslocamentos de maneira aleatória e/ou simultânea. Entretanto, apenas movimentos seguros são autorizados, de modo que o Gato e o Rato nunca compartilhem a mesma sala em nenhum instante da execução do sistema.
 
 ### 🧩 Considerações
 
