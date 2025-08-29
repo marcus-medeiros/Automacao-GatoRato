@@ -199,7 +199,7 @@ Com essa composição, o autômato resultante da síntese é capaz de localizar 
 A condição que garante a simultaneidade dos movimentos dos agentes impõe limitações às possibilidades de deslocamento, de modo que o Gato e o Rato não podem ocupar salas adjacentes ao mesmo tempo. Caso essa restrição não fosse necessária, seria possível permitir uma maior flexibilidade nos movimentos dos agentes entre as salas, ampliando as combinações de estados possíveis no sistema.
 
 
-### 🎥 Link do vídeo: 
+### 🎥 Link do vídeo: https://youtu.be/e5iRtu5eMLY
 
 ### 🖊️ Documento: 
 doc/
