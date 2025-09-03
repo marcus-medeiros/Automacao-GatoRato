@@ -78,7 +78,7 @@ Podemos observar que os movimentos do rato, antes totalmente não controláveis,
 <p align="center">
 <img src= "img/RATO.png" height="150" align="center">
 </p>
-<p align="center"> Figura 04: Autômato do Gato</p>
+<p align="center"> Figura 04: Autômato do Rato</p>
 
 ## ⚙️ Modelagem das Portas
 Além dos autômatos que modelam os agentes Gato e Rato, faz-se necessária a inclusão de plantas adicionais que representem o funcionamento das portas entre as salas. Essas plantas têm como finalidade viabilizar o controle dos movimentos dos agentes no sistema, atuando como elementos de restrição e coordenação, de modo a garantir que a especificação de segurança seja satisfeita.
