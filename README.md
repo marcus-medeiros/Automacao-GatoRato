@@ -71,7 +71,7 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 <p align="center"> Figura 03: Eventos do autômato do Rato</p>
 
 #### ⚠️ Observação: Mudança na interpretação
-Podemos observar que os movimentos do rato, antes totalmente não controláveis, tornaram-se em grande parte controláveis devido à inserção das portas entre as salas. No entanto, os movimentos do rato entre as salas 5 e 1 permanecem não controláveis, em razão da limitação de utilização de apenas quatro portas.
+Podemos observar que os movimentos do rato, antes totalmente não controláveis, tornaram-se em grande parte controláveis devido à inserção das portas entre as salas. No entanto, os movimentos do rato entre as salas 4 e 0 permanecem não controláveis, em razão da limitação de utilização de apenas quatro portas.
 
 #### Planta: Autômato do Rato
 
