@@ -83,7 +83,12 @@ Podemos observar que os movimentos do rato, antes totalmente não controláveis,
 ## ⚙️ Modelagem das Salas
 Além dos autômatos que modelam os agentes Gato e Rato, faz-se necessária a inclusão de especificações que representem o funcionamento das portas entre as salas da forma desejada pelo controle. Esses autômatos têm como finalidade viabilizar o controle dos movimentos dos agentes no sistema, atuando como elementos de restrição e coordenação, de modo a garantir que a especificação de segurança seja satisfeita.
 
-### 🕹️ Sala 0
+## 🛑 Especificações
+Este autômato tem como função assegurar que o Gato e o Rato nunca ocupem a mesma sala simultaneamente. Para atender a esse objetivo, torna-se necessário o desenvolvimento de autômatos adicionais que imponham restrições sobre determinados movimentos (eventos), de modo que o sistema resultante opere conforme o comportamento esperado.
+
+As especificações foram definidas com base na quantidade de agentes presentes em cada sala, considerando que os estados em que gato e rato estivessem juntos deveriam ser bloqueados.
+
+### 🕹️ Especifição: Sala 0
 
 #### Estados
 - **Sala0_g** (Inicial): Indica que apenas o gato está na sala.
@@ -94,106 +99,21 @@ Além dos autômatos que modelam os agentes Gato e Rato, faz-se necessária a in
 #### Planta: Autômato do Sala 0
 
 <p align="center">
-<img src= "img/Porta_01.png" height="150" align="center">
+<img src= "img/sala0.png" height="150" align="center">
 </p>
-<p align="center"> Figura 06: Autômato da Porta_01</p>
+<p align="center"> Figura 05: Autômato da Sala 0</p>
 
-
-### 🕹️ Porta 2 (Entre as salas 2 e 3)
-
-#### Estados
-- **P12** (Inicial): Indica que a porta está aberta.
-- **P12_F**: Indica que a porta está fechada.
-
-#### Eventos Próprios
-- **P12_Abrir**: Ação para abrir a porta.
-- **P12_Fechar**: Transição para fechar a porta.
-
-<p align="center">
-<img src= "img/EventosPorta_12.png" height="150" align="center">
-<p align="center"> Figura 07: Eventos do autômato da Porta_12</p>
-
-#### Planta: Autômato do Porta_12
-
-<p align="center">
-<img src= "img/Porta_12.png" height="150" align="center">
-</p>
-<p align="center"> Figura 08: Autômato da Porta_12</p>
-
-
-### 🕹️ Porta 3 (Entre as salas 3 e 4)
-
-#### Estados
-- **P23** (Inicial): Indica que a porta está aberta.
-- **P23_F**: Indica que a porta está fechada.
-
-#### Eventos Próprios
-- **P23_Abrir**: Ação para abrir a porta.
-- **P23_Fechar**: Transição para fechar a porta.
-
-<p align="center">
-<img src= "img/EventosPorta_23.png" height="150" align="center">
-<p align="center"> Figura 09: Eventos do autômato da Porta_23</p>
-
-#### Planta: Autômato do Porta_23
-
-<p align="center">
-<img src= "img/Porta_23.png" height="150" align="center">
-</p>
-<p align="center"> Figura 10: Autômato da Porta_23</p>
-
-### 🕹️ Porta 4 (Entre as salas 4 e 5)
-
-#### Estados
-- **P34** (Inicial): Indica que a porta está aberta.
-- **P34_F**: Indica que a porta está fechada.
-
-#### Eventos Próprios
-- **P34_Abrir**: Ação para abrir a porta.
-- **P34_Fechar**: Transição para fechar a porta.
-
-<p align="center">
-<img src= "img/EventosPorta_34.png" height="150" align="center">
-<p align="center"> Figura 11: Eventos do autômato da Porta_34</p>
-
-#### Planta: Autômato do Porta_34
-
-<p align="center">
-<img src= "img/Porta_34.png" height="150" align="center">
-</p>
-<p align="center"> Figura 12: Autômato da Porta_34</p>
-
-
-## 🛑 Especificações
-Este autômato tem como função assegurar que o Gato e o Rato nunca ocupem a mesma sala simultaneamente. Para atender a esse objetivo, torna-se necessário o desenvolvimento de autômatos adicionais que imponham restrições sobre determinados movimentos (eventos), de modo que o sistema resultante opere conforme o comportamento esperado.
-
-Foram elaboradas duas especificações para a modelagem do sistema. A primeira corresponde ao resultado da composição paralela dos autômatos que representam o Gato e o Rato, enquanto a segunda refere-se à composição das portas entre as salas. A partir desses autômatos resultantes, foram então aplicadas as restrições necessárias para garantir o atendimento à especificação de segurança do sistema.
-
-### 🎌 Especificação: Gato e Rato
-
-Inicialmente, após a geração da especificação por meio da composição entre as plantas que representam os agentes do sistema, foram aplicadas as restrições necessárias. Em essência, essas restrições correspondem aos estados em que o Gato e o Rato ocupam simultaneamente a mesma sala, situação que deve ser evitada no modelo.
-
-#### Especificação: Autômato do Gato||Rato
-
-<p align="center">
-<img src= "img/Especific_GATOeRATO.png" height="300" align="center">
-</p>
-<p align="center"> Figura 13: Especificação GATO||RATO</p>
-
-**Observação:** Observa-se que o modelo apresenta estados com restrição, destacados em azul, enquanto os outros permanecem representados na cor verde.
-
-### 🎌 Especificação: Autômato da Composição das Portas
-
-**Objetivo:** O objetivo é representar de forma completa as condições em que as portas devem permanecer abertas ou fechadas, considerando os possíveis movimentos do Gato e do Rato, de modo a garantir que cada transição dos agentes resulte na configuração correta de acesso entre as salas. Por se tratar de uma especificação, os eventos que violam essas condições devem ser bloqueados. Como o autômato das portas define que os movimentos de entrada em uma sala dependem do estado atual das portas, surgem restrições automáticas no sistema. Dessa forma, após a composição de todos os autômatos, obtém-se uma especificação completa que descreve todos os movimentos permitidos para os agentes, assegurando a operação correta e segura do sistema.
-
+...
+#### ⚠️ Observação: Temos um comportamento similar para as outras salas (Sala 1, Sala 2, Sala 3 e Sala 4)
+...
 
 
 ### 🧩 Autômato Resultante (Após a Síntese dos autômatos)
 
-Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, e das **Portas* e as *Especificações*. 
+Realizando-se a composição paralela, temos o autômato resultante da síntese supervisionada dos autômatos *Gato*, *Rato*, e as *Especificações*. 
 O sistema resultante apresenta as seguintes propriedades:
 
-- Permite que o Gato e o Rato se movimentem de forma simultânea, garantindo uma interpretação rigorosa do comportamento do sistema;
+- Permite que o Gato e o Rato se movimentem de forma controlada, garantindo as especificações do projeto.
 
 - Assegura que, em nenhum momento, os dois agentes ocupem a mesma sala;
 
@@ -205,7 +125,7 @@ Com essa composição, o autômato resultante da síntese é capaz de localizar 
 
 ### 🧩 Considerações
 
-A condição que garante a simultaneidade dos movimentos dos agentes impõe limitações às possibilidades de deslocamento, de modo que o Gato e o Rato não podem ocupar salas adjacentes ao mesmo tempo. Caso essa restrição não fosse necessária, seria possível permitir uma maior flexibilidade nos movimentos dos agentes entre as salas, ampliando as combinações de estados possíveis no sistema.
+Foi necessária uma reinterpretação do problema para tornar viável uma solução, já que a não controlabilidade dos movimentos do rato impedia a obtenção de uma síntese controlável. Com a inserção das portas, esse obstáculo foi contornado, permitindo a resolução do problema inicial.
 
 
 ### 🎥 Link do vídeo: https://youtu.be/e5iRtu5eMLY
