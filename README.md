@@ -29,6 +29,8 @@ Diante dessa condição, duas abordagens podem ser consideradas para superar o p
 Ao introduzir portas de controle no sistema (limitadas a quatro), os deslocamentos do rato deixam de ser totalmente livres e passam a ser influenciados pelo estado das portas (abertas ou fechadas).
 Com isso, os movimentos do rato tornam-se controláveis, eliminando os problemas de controlabilidade inicial. Dessa forma, é possível modelar o sistema de maneira permissiva, não bloqueante e plenamente controlável.
 
+Portanto, podemos deduzir que o autômato do gato e do rato pode ser resumido, essencialmente, à construção dos autômatos do gato, do rato e das especificações do sistema, que simulam o comportamento das portas e determinam a controlabilidade dos eventos de movimento do rato.
+
 ## ⚙️ Componentes do Sistema
 O sistema em estudo é constituído por dois agentes, denominados Gato e Rato, cujos comportamentos foram modelados na forma de plantas. A regra de operação é definida por uma especificação de segurança, responsável por estabelecer as condições de controle. No entanto, devido à característica de não controlabilidade associada ao agente Rato, tornou-se necessária a introdução de portas entre as salas, de modo a viabilizar o cumprimento da especificação e garantir o correto funcionamento do sistema.
 
