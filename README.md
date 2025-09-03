@@ -133,10 +133,9 @@ Foi necessária uma reinterpretação do problema para tornar viável uma soluç
 ### 🖊️ Documento: 
 doc/
 ├─ Automato_GatoRato_ALTERNANDO.wmod (Modelagem com alternância - antiga)
-├─ GatoRato_Project.wmod (Modelagem do Projeto Completa - nova)
-└─ main
+├─ GatoRatoSED.wmod (Modelagem do Projeto Completa - Utilizando-se de variáveis)
+└─ ProjetoSED.wmod (Modelagem do Projeto Completa - Utilizando-se as salas)
 
-img/
 |- Imagens...
 
 ✉ README.md    [selected]
