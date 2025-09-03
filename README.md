@@ -7,16 +7,16 @@ Projeto realizado por:
 > Ygor de Almeida Pereira - 121110166
 
 
-##🐈 Controle do fluxo de salas entre dois agentes (gato e rato) com auxílio de portas
+## 🐈 Controle do fluxo de salas entre dois agentes (gato e rato) com auxílio de portas
 
 Este projeto aborda a modelagem de um sistema clássico de eventos discretos, no qual um gato e um rato se deslocam livremente em uma torre composta por 5 salas organizadas em ciclo.
 
-##🔎 Descrição Geral
+## 🔎 Descrição Geral
 
 O objetivo é desenvolver um controlador automatizado capaz de restringir os movimentos do gato e do rato, assegurando a principal condição de segurança: eles nunca podem ocupar a mesma sala ao mesmo tempo.
 O sistema supervisionado deve ser não bloqueante (isto é, nunca travar) e maximamente permissivo, garantindo a maior liberdade possível de deslocamento sem violar a regra de segurança.
 
-##⛔ Problema Encontrado
+## ⛔ Problema Encontrado
 
 Na construção dos autômatos, surge uma limitação importante: a não controlabilidade dos movimentos do rato. Como ele pode se mover de forma totalmente autônoma, sem restrições externas, torna-se inviável controlar o sistema apenas com base em eventos observáveis.
 
@@ -24,7 +24,7 @@ Assim, embora o sistema seja observável, não é controlável. A incerteza sobr
 
 Diante dessa condição, duas abordagens podem ser consideradas para superar o problema.
 
-##🎯 Premissa
+## 🎯 Premissa
 
 Ao introduzir portas de controle no sistema (limitadas a quatro), os deslocamentos do rato deixam de ser totalmente livres e passam a ser influenciados pelo estado das portas (abertas ou fechadas).
 Com isso, os movimentos do rato tornam-se controláveis, eliminando os problemas de controlabilidade inicial. Dessa forma, é possível modelar o sistema de maneira permissiva, não bloqueante e plenamente controlável.
