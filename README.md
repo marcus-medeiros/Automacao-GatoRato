@@ -63,13 +63,15 @@ O rato é o segundo agente do sistema. Ele também se move livremente entre as s
 - **S0**, **S1**, **S2** (Inicial), **S3**, **S4**: Representa os estados que o gato está posicionado, em que S0 está relacionado à Sala1, S1 à Sala2, e assim por diante.
 
 #### Eventos 
-- **R_01**, **R_10**, **R_12**, **R_21**, **R_23**, **R_32**, **R_34**, **R_43**, **R_40**, **R_04**: Eventos não controláveis que representam o movimento do rato.
+- **R_01**, **R_10**, **R_12**, **R_21**, **R_23**, **R_32**, **R_34**, **R_43**, **R_40**, **R_04**: Eventos controláveis e não controláveis que representam o movimento do rato.
 
 <p align="center">
 <img src= "img/EventosRato.png" height="150" align="center">
 </p>
 <p align="center"> Figura 03: Eventos do autômato do Rato</p>
 
+### ⚠️ Observação: Mudança na interpretação
+Podemos observar que os movimentos do rato, antes totalmente não controláveis, tornaram-se em grande parte controláveis devido à inserção das portas entre as salas. No entanto, os movimentos do rato entre as salas 5 e 1 permanecem não controláveis, em razão da limitação de utilização de apenas quatro portas.
 
 #### Planta: Autômato do Rato
 
