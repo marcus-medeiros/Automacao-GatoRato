@@ -80,26 +80,18 @@ Podemos observar que os movimentos do rato, antes totalmente não controláveis,
 </p>
 <p align="center"> Figura 04: Autômato do Rato</p>
 
-## ⚙️ Modelagem das Portas
-Além dos autômatos que modelam os agentes Gato e Rato, faz-se necessária a inclusão de plantas adicionais que representem o funcionamento das portas entre as salas. Essas plantas têm como finalidade viabilizar o controle dos movimentos dos agentes no sistema, atuando como elementos de restrição e coordenação, de modo a garantir que a especificação de segurança seja satisfeita.
+## ⚙️ Modelagem das Salas
+Além dos autômatos que modelam os agentes Gato e Rato, faz-se necessária a inclusão de especificações que representem o funcionamento das portas entre as salas da forma desejada pelo controle. Esses autômatos têm como finalidade viabilizar o controle dos movimentos dos agentes no sistema, atuando como elementos de restrição e coordenação, de modo a garantir que a especificação de segurança seja satisfeita.
 
-Esses autômatos tem como objetivo representarem o funcionamento das portas entre as salas, modelando duas ações possíveis: abrir ou fechar a porta.
-
-### 🕹️ Porta 1 (Entre as salas 1 e 2)
+### 🕹️ Sala 0
 
 #### Estados
-- **P01** (Inicial): Indica que a porta está aberta.
-- **P01_F**: Indica que a porta está fechada.
+- **Sala0_g** (Inicial): Indica que apenas o gato está na sala.
+- **Sala0_n**: Indica que ningúem está na sala.
+- **Sala0_r**: Indica que apenas o rato está na sala.
+- **Sala0_gr**: Indica que o gato e o rato estão na sala
 
-#### Eventos Próprios
-- **P01_Abrir**: Ação para abrir a porta.
-- **P01_Fechar**: Transição para fechar a porta.
-
-<p align="center">
-<img src= "img/EventosPorta_01.png" height="150" align="center">
-<p align="center"> Figura 05: Eventos do autômato da Porta_01</p>
-
-#### Planta: Autômato do Porta_01
+#### Planta: Autômato do Sala 0
 
 <p align="center">
 <img src= "img/Porta_01.png" height="150" align="center">
