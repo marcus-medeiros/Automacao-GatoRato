@@ -31,6 +31,14 @@ Com isso, os movimentos do rato tornam-se controláveis, eliminando os problemas
 
 Portanto, podemos deduzir que o autômato do gato e do rato pode ser resumido, essencialmente, à construção dos autômatos do gato, do rato e das especificações do sistema, que simulam o comportamento das portas e determinam a controlabilidade dos eventos de movimento do rato.
 
+## Esquemático do Sistema
+
+<p align="center">
+<img src= "img/Esquema.png" height="200" align="center">
+</p>
+<p align="center"> Figura 01: Eventos do autômato do Gato</p>
+
+
 ## ⚙️ Componentes do Sistema
 O sistema em estudo é constituído por dois agentes, denominados Gato e Rato, cujos comportamentos foram modelados na forma de plantas. A regra de operação é definida por uma especificação de segurança, responsável por estabelecer as condições de controle. No entanto, devido à característica de não controlabilidade associada ao agente Rato, tornou-se necessária a introdução de portas entre as salas, de modo a viabilizar o cumprimento da especificação e garantir o correto funcionamento do sistema.
 
