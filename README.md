@@ -7,14 +7,27 @@ Projeto realizado por:
 > Ygor de Almeida Pereira - 121110166
 
 
-# 🐈 Controle do fluxo de salas entre dois agentes (gato e o rato) com auxílio de portas
-Este projeto modela um sistema clássico de eventos discretos envolvendo um gato e um rato que se movem livremente em uma torre com 5 salas dispostas em um ciclo. 
+##🐈 Controle do fluxo de salas entre dois agentes (gato e rato) com auxílio de portas
 
-## 🔎 Descrição Geral
-Este projeto modela um sistema clássico de eventos discretos envolvendo um gato e um rato que se movem livremente em uma torre com 5 salas dispostas em um ciclo. O objetivo é desenvolver um supervisor (um controlador automatizado) que restrinja os movimentos do gato para garantir a principal condição de segurança: o gato nunca deve ocupar a mesma sala que o rato. O sistema supervisionado deve ser não-bloqueante (nunca travar) e maximamente permissivo, concedendo a maior liberdade de movimento possível sem violar a regra de segurança.
+Este projeto aborda a modelagem de um sistema clássico de eventos discretos, no qual um gato e um rato se deslocam livremente em uma torre composta por 5 salas organizadas em ciclo.
 
-## ⛔ Problema Extra
-Durante a montagem dos autômatos, observa-se a existência de uma restrição que não é imediatamente aparente, mas que se torna evidente quando se busca efetivamente controlar o sistema. Ao modelar as especificações, em especial os eventos bloqueantes, verifica-se que a ausência de controle sobre os movimentos dos ratos impõe uma dificuldade adicional à modelagem. Isso ocorre porque, embora o sistema seja observável, ele não é controlável. Além da incerteza quanto à direção escolhida pelo rato em seus deslocamentos, não há garantia nem controle sobre a efetiva realização da transição correspondente ao movimento.
+##🔎 Descrição Geral
+
+O objetivo é desenvolver um controlador automatizado capaz de restringir os movimentos do gato e do rato, assegurando a principal condição de segurança: eles nunca podem ocupar a mesma sala ao mesmo tempo.
+O sistema supervisionado deve ser não bloqueante (isto é, nunca travar) e maximamente permissivo, garantindo a maior liberdade possível de deslocamento sem violar a regra de segurança.
+
+##⛔ Problema Encontrado
+
+Na construção dos autômatos, surge uma limitação importante: a não controlabilidade dos movimentos do rato. Como ele pode se mover de forma totalmente autônoma, sem restrições externas, torna-se inviável controlar o sistema apenas com base em eventos observáveis.
+
+Assim, embora o sistema seja observável, não é controlável. A incerteza sobre a direção escolhida pelo rato, somada à ausência de garantias sobre a realização efetiva das transições de movimento, gera uma dificuldade adicional na modelagem das especificações.
+
+Diante dessa condição, duas abordagens podem ser consideradas para superar o problema.
+
+##🎯 Premissa
+
+Ao introduzir portas de controle no sistema (limitadas a quatro), os deslocamentos do rato deixam de ser totalmente livres e passam a ser influenciados pelo estado das portas (abertas ou fechadas).
+Com isso, os movimentos do rato tornam-se controláveis, eliminando os problemas de controlabilidade inicial. Dessa forma, é possível modelar o sistema de maneira permissiva, não bloqueante e plenamente controlável.
 
 ## ⚙️ Componentes do Sistema
 O sistema em estudo é constituído por dois agentes, denominados Gato e Rato, cujos comportamentos foram modelados na forma de plantas. A regra de operação é definida por uma especificação de segurança, responsável por estabelecer as condições de controle. No entanto, devido à característica de não controlabilidade associada ao agente Rato, tornou-se necessária a introdução de portas entre as salas, de modo a viabilizar o cumprimento da especificação e garantir o correto funcionamento do sistema.
