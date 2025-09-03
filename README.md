@@ -34,7 +34,7 @@ Portanto, podemos deduzir que o autômato do gato e do rato pode ser resumido, e
 ## Esquemático do Sistema
 
 <p align="center">
-<img src= "img/Esquema.png" height="500" align="center">
+<img src= "img/Esquema.png" height="1000" align="center">
 </p>
 <p align="center"> Figura 0: Esquemático</p>
 
